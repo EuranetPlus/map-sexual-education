@@ -16,9 +16,10 @@
 	let countryValue;
 
 	// Berechnung des countryValue falls benötigt, jedoch ohne Anzeige im Tooltip
-	$: if(selectedCountry){
-		countryValue = config.datasetUnit == 'percent' ? formatInt(selectedCountry.csvImport.value * 100) : selectedCountry.csvImport.value;
-	}
+// $: if(selectedCountry){
+//     countryValue = config.datasetUnit == 'percent' ? formatInt(selectedCountry.csvImport.value * 100) : selectedCountry.csvImport.value;
+// }
+
 
 	$: countryUnit = config.datasetUnit == 'percent' ? '%' : '';
 	$: countryLabel = tooltip[0].label;
