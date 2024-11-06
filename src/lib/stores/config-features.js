@@ -7,7 +7,7 @@ export const config = {
 	colourScheme: 'blue', // one of the following: "blue", "purple-blue", "green-blue", "orange-red", "yellow-green"
 	headlineAvailable: true, // true or false; Should the map have a headline?
 	subheadlineAvailable: true, // true or false; Should the map have a subheadline?
-	tooltipAvailable: false, // true or false; Should the map show a tooltip when hovering over a country?
+	tooltipAvailable: true, // true or false; Should the map show a tooltip when hovering over a country?
 	scaleBarAvailable: false, // true or false; Should the map show a scale bar on the top?
 	legendAvailable: true, // true or false; Should the map show a legend in the bottom right corner?
 	textSourceAvailable: true, // true or false; Should the map show a source text below the map?
