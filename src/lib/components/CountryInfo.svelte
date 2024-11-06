@@ -15,11 +15,9 @@
 	let width;
 	let countryValue;
 
-	// $: countryValue =
-	// 	config.datasetUnit == 'percent' ? formatInt($MOUSE.tooltip.value * 100) : $MOUSE.tooltip.value;
+	// Berechnung des countryValue falls benötigt, jedoch ohne Anzeige im Tooltip
 	$: if(selectedCountry){
 		countryValue = config.datasetUnit == 'percent' ? formatInt(selectedCountry.csvImport.value * 100) : selectedCountry.csvImport.value;
-		// console.log(countryValue)
 	}
 
 	$: countryUnit = config.datasetUnit == 'percent' ? '%' : '';
@@ -42,8 +40,9 @@
 			<span class="font-bold">{countryName}</span>
 			{#if config.datasetType == 'values'}
 				{#if $MOUSE.tooltip.value}
-					<span>–</span>
-					<span class="font-bold">{countryValue}{countryUnit}</span> <span>{countryLabel}</span>
+					<!-- <span>–</span>
+					<span class="font-bold">{countryValue}{countryUnit}</span> -->
+					<span>{countryLabel}</span>
 				{/if}
 			{/if}
 		</div>
