@@ -408,10 +408,7 @@
 			<div class="tooltip-head font-bold">{$MOUSE.tooltip.name}</div>
 			<div class="tooltip-body space-y-1">
 				{#each tooltip as tip}
-				
-							<span>{tip.label}</span>
-						
-					{/if}
+					
 					{#if $MOUSE.tooltip.extraInfo == true}
 						<div class="text-xs"><span class="icon-tap" />{tooltip[0].textCountryClick}</div>
 					{/if}
