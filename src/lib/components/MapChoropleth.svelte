@@ -278,7 +278,7 @@
 				y: mouseY,
 				tooltip: {
 					name: hoveredCountry.name,
-					value: hoveredCountry.value,
+					//value: hoveredCountry.value,
 					valuePercent: hoveredCountry.valuePercent,
 					extraInfo: hoveredCountry.extraInfo
 				}
@@ -306,7 +306,7 @@
 
 				hoveredCountry = {
 					name: countryName,
-					value: country.csvImport.value,
+					//value: country.csvImport.value,
 					extraInfo: country.csvImport.extraInfo
 				};
 			} else {
