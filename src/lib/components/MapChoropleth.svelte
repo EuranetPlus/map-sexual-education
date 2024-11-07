@@ -408,19 +408,7 @@
 			<div class="tooltip-head font-bold">{$MOUSE.tooltip.name}</div>
 			<div class="tooltip-body space-y-1">
 				{#each tooltip as tip}
-					{#if config.datasetType == 'values'}
-						<div class="values">
-							/*
-				{#if config.datasetUnit == 'percent'}
-					{#if config.percentRounded == true}
-						<span class="font-bold">{formatInt($MOUSE.tooltip.value * 100)}%</span>
-					{:else if config.percentRounded == false}
-						<span class="font-bold">{Math.round($MOUSE.tooltip.value * 1000) / 10}%</span>
-					{/if}
-				{:else if config.datasetUnit == 'fullNumbers'}
-					<span class="font-bold">{$MOUSE.tooltip.value}</span>
-				{/if}
-				*/
+				
 							<span>{tip.label}</span>
 						</div>
 					{/if}
