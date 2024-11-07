@@ -408,7 +408,7 @@
 			<div class="tooltip-head font-bold">{$MOUSE.tooltip.name}</div>
 			<div class="tooltip-body space-y-1">
 				{#each tooltip as tip}
-					{#if config.datasetType == 'values'}
+					/*{#if config.datasetType == 'values'}
 						<div class="values">
 							{#if config.datasetUnit == 'percent'}
 								{#if config.percentRounded == true}
@@ -420,7 +420,7 @@
 								<span class="font-bold">{$MOUSE.tooltip.value}</span>
 							{/if}
 							<span>{tip.label}</span>
-						</div>
+						</div>/*
 					{/if}
 					{#if $MOUSE.tooltip.extraInfo == true}
 						<div class="text-xs"><span class="icon-tap" />{tooltip[0].textCountryClick}</div>
